@@ -148,7 +148,7 @@ class puppet::params::master {
   $ignoreschedules                      = false
   $default_schedules                    = true
   $puppetport                           = '8139'
-  $noop                                 = false
+  $no_op                                = false
   $runinterval                          = '1800'
   $listen                               = false
   $ca_server                            = 'master.puppetlabs.vm'
