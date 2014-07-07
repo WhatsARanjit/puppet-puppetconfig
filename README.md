@@ -11,6 +11,7 @@ Installalation includes:
 - Main stanza
 - Master stanza
 - Agent stanza
+- Create any new stanza with values
 
 Requires:
 
@@ -45,12 +46,14 @@ class { '::puppet::main':
 Create a new stanza with values
 
 ```puppet
-define ::puppet::config { 'manifests':
+define ::puppet::config { 'test manifests':
   section => 'test',
+  setting => 'manifests',
   value   => '/home/foo/manifests/site.pp',
 }
-define ::puppet::config { 'modulepath':
+define ::puppet::config { 'test modulepath':
   section => 'test',
+  setting => 'modulepath',
   value   => '/home/foo/modules',
 }
 ```
