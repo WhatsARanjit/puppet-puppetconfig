@@ -1,2 +1,2 @@
 $stanza = 'agent'
-include ::puppet::generate::agentini
+include ::puppetconfig::generate::agentini

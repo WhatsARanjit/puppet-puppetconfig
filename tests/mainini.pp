@@ -1,2 +1,2 @@
 $stanza = 'main'
-include ::puppet::generate::mainini
+include ::puppetconfig::generate::mainini

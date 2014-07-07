@@ -1,2 +1,2 @@
 $stanza = 'master'
-include ::puppet::generate::masterini
+include ::puppetconfig::generate::masterini

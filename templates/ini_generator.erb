@@ -11,14 +11,14 @@
 <% end -%>
 <% @ini.each do |key,val| -%>
 <% if key=='section' %>
-  if $section != $::puppet::params::<%= @stanza %>::section {
+  if $section != $::puppetconfig::params::<%= @stanza %>::section {
     ini_setting { '<%= @stanza %> section':
       setting => 'name',
       value   => $section,
     }
   }
 <% else -%>
-  if $<%= key %> != $::puppet::params::<%= @stanza %>::<%= key %> {
+  if $<%= key %> != $::puppetconfig::params::<%= @stanza %>::<%= key %> {
     ini_setting { '<%= @stanza %> <%= key %>':
       setting => '<%= key %>',
       value   => $<%= key %>,

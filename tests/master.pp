@@ -1,3 +1,3 @@
-class { '::puppet::master':
+class { '::puppetconfig::master':
   config => '/tmp/puppet.conf',
 }

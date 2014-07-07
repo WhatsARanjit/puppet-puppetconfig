@@ -1,5 +1,5 @@
-define puppet::config (
-  $config = $::puppet::main::config,
+define puppetconfig::config (
+  $config = $::puppetconfig::main::config,
   $ensure = 'present',
   $section,
   $setting = $title,

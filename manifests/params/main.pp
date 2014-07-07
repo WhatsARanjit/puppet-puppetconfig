@@ -1,4 +1,4 @@
-class puppet::params::main {
+class puppetconfig::params::main {
   $archive_file_server = 'master.puppetlabs.vm'
   $archive_files       = 'true'
   $certname            = 'master.puppetlabs.vm'

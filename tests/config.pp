@@ -1,7 +1,7 @@
-class { '::puppet::main':
+class { '::puppetconfig::main':
   config => '/tmp/puppet.conf',
 } ->
-puppet::config { 'foo':
+puppetconfig::config { 'foo':
   section => 'bar',
   value   => 'baz',
 }

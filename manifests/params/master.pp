@@ -1,4 +1,4 @@
-class puppet::params::master {
+class puppetconfig::params::master {
   $confdir                              = '/etc/puppetlabs/puppet'
   $vardir                               = '/var/opt/lib/pe-puppet'
   $section                              = 'master'

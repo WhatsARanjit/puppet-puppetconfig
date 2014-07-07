@@ -26,18 +26,18 @@ Default: /etc/puppetlabs/puppet/puppet.conf
 
 ## Example Usage
 
-Install transmission:
+Install puppet:
 
 ```puppet
-include ::puppet::main
-include ::puppet::master
-include ::puppet::agent
+include ::puppetconfig::main
+include ::puppetconfig::master
+include ::puppetconfig::agent
 ```
 
-Install puppet::main with custom parameters:
+Install puppetconfig::main with custom parameters:
 
 ```puppet
-class { '::puppet::main':
+class { '::puppetconfig::main':
   modulepath   => '/opt/modules',
   archive_file => false,
 }
@@ -46,12 +46,12 @@ class { '::puppet::main':
 Create a new stanza with values
 
 ```puppet
-define ::puppet::config { 'test manifests':
+define ::puppetconfig::config { 'test manifests':
   section => 'test',
   setting => 'manifests',
   value   => '/home/foo/manifests/site.pp',
 }
-define ::puppet::config { 'test modulepath':
+define ::puppetconfig::config { 'test modulepath':
   section => 'test',
   setting => 'modulepath',
   value   => '/home/foo/modules',

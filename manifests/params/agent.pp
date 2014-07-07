@@ -1,4 +1,4 @@
-class puppet::params::agent {
+class puppetconfig::params::agent {
   $confdir                              = '/etc/puppetlabs/puppet'
   $vardir                               = '/var/opt/lib/pe-puppet'
   $section                              = 'agent'
