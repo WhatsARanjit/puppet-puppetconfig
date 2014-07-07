@@ -57,3 +57,6 @@ define ::puppetconfig::config { 'test modulepath':
   value   => '/home/foo/modules',
 }
 ```
+
+## A Word
+There are ::puppetconfig::generate::{main,master,agent}ini classes in this module.  Basically they were used to generate the text for their respective classes.  They are NOT to be included or classified to a node.
