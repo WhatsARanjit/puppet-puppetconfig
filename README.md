@@ -43,7 +43,7 @@ class { '::puppetconfig::main':
 }
 ```
 
-Create a new stanza with values
+Create a new stanza with values:
 
 ```puppet
 define ::puppetconfig::config { 'test manifests':
